@@ -36,7 +36,7 @@ The following ray-tracing scenes constructed by [DeepMIMO](https://www.deepmimo.
 ```
   test_diffusion_model.py
     --gpu_id: index of gpu device
-    --train: scene for model training ("mixed", "O1_2B", or "I2_28B")
+    --train: scene for model training ("mixed", "O1_2B", "O1_28B", or "I2_28B")
     --test: scene for model test
     --model_pth: File name of the saved model (e.g., 'XXXX.pth')
 ```
