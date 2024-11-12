@@ -32,7 +32,7 @@ class Channels(Dataset):
         self.num_paths = config.data.num_paths
         self.spacings = np.copy(config.data.spacing_list)
         self.filenames = []
-        self.gan = gan
+        # self.gan = gan
         n_tx, n_rx = config.data.image_size[0], config.data.image_size[1]
         self.n_tx, self.n_rx = n_tx, n_rx
 
@@ -142,13 +142,13 @@ class Channels(Dataset):
                   'sigma_n': noise_power.astype(np.float32),
                   'idx': int(idx)}
 
-        if self.gan:
-            sample = {'H': H_normalized_coefficient.astype(np.float32),
-                      'H_train': self.H_train[idx].astype(np.float32),  # [n_batch, 2, n_rx, n_tx]
-                      'P': self.pilots[idx].astype(np.complex64),
-                      'Y': Y.astype(np.complex64),
-                      'sigma_n': self.noise_power.astype(np.float32),
-                      'idx': int(idx)}
+        # if self.gan:
+        #     sample = {'H': H_normalized_coefficient.astype(np.float32),
+        #               'H_train': self.H_train[idx].astype(np.float32),  # [n_batch, 2, n_rx, n_tx]
+        #               'P': self.pilots[idx].astype(np.complex64),
+        #               'Y': Y.astype(np.complex64),
+        #               'sigma_n': self.noise_power.astype(np.float32),
+        #               'idx': int(idx)}
 
         return sample
 
