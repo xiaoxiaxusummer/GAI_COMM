@@ -1,9 +1,9 @@
 # Generative Artificial Intelligence (GAI) for Mobile Communications: A Diffusion Model Perspective
 
-This is **Pytorch** code Implementation of paper **"Generative Artificial Intelligence (GAI) for Mobile Communications: A Diffusion Model Perspective"**, which has been accepted by IEEE Communications Magzine (COMMAG).
+This is **Pytorch** code Implementation of paper **"Generative Artificial Intelligence (GAI) for Mobile Communications: A Diffusion Model Perspective"**(https://ieeexplore.ieee.org/document/10812969), which has been accepted by IEEE Communications Magzine (COMMAG).
 
-> + This repository implements conditional diffusion model (DM) to generate high-fidelity wireless channels for MIMO estimation in outdoor, indoor, and their mixed scenes.
-> + Based on score-based stochastic differential equation (SDE), MIMO channels are recovered using classifier-guided conditional generation and predictor-corrector (PC) sampling.
+> + This repository implements conditional diffusion model (DM) to generate high-fidelity wireless channels for MIMO channel estimation in outdoor, indoor, and their mixed scenes.
+  > + The received pilot signals are regarded as conditions. Based on score-based stochastic differential equation (SDE), MIMO channels are recovered using classifier-guided conditional generation and predictor-corrector (PC) sampling.
 
 ## Recommended Environment
 >+ torch==2.4.0+cu121, torchaudio==2.4.0+cu121, torchvision==0.19.0+cu121, xformers==0.0.27.post2
@@ -49,5 +49,5 @@ The following ray-tracing scenes constructed by [DeepMIMO](https://www.deepmimo.
 
 ## Reference
 If you find the code useful for your research, please consider citing
-> X. Xu, X. Mu, Y. Liu, H. Xing, Y. Liu, A. Nallanathan, ``Generative Artificial Intelligence (GAI) for Mobile Communications: A Diffusion Model Perspective'', IEEE Communications Magazine, accepted, Sept. 2024.
+> X. Xu, X. Mu, Y. Liu, H. Xing, Y. Liu, A. Nallanathan, ``Generative Artificial Intelligence (GAI) for Mobile Communications: A Diffusion Model Perspective'', IEEE Communications Magazine, early access, Dec. 2024.
 
