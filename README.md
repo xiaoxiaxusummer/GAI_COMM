@@ -6,6 +6,7 @@ This is **Pytorch** code Implementation of paper **"Generative Artificial Intell
   > + The received pilot signals are regarded as conditions. Based on score-based stochastic differential equation (SDE), MIMO channels are recovered using classifier-guided conditional generation and predictor-corrector (PC) sampling.
 
 ## Recommended Environment
+>+ python=3.8
 >+ torch==2.4.0+cu121, torchaudio==2.4.0+cu121, torchvision==0.19.0+cu121, xformers==0.0.27.post2
 >+ tensorflow-datasets==4.9.2, tensorflow-gpu==2.9.0, tensorflow-gan==2.1.0, tensorflow-probability==0.11.0, tensorboard==2.9.0
 >+ ninja==1.11.1.1, jax==0.4.11, jaxlib==0.4.11, jinja2==3.1.3
